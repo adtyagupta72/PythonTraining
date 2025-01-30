@@ -26,3 +26,5 @@ y = input("Enter second value for sum: ")
 z = x + y
 print("Sum: ",z)
 
+print("Added git configuration!!")
+print("So happy to have git configured!")
