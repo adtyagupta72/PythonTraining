@@ -10,24 +10,10 @@ c = "Software Developer"
 
 age = 10
 name = "Aditya"
-profession = "Software Developer"
 
-#   age = getUsersAge()
+name = input("Enter your name: ")
+print("Your name is :", name)
 
-print(age)
-print(type(age))
-
-age = "Four"
-print(age)
-print(type(age))
-
-x = input("Enter first value for sum: ")
-y = input("Enter second value for sum: ")
-z = x + y
-print("Sum: ",z)
-
-print("Added git configuration!!")
-print("So happy to have git configured!")
-print("Finally my repo is configured!!!!!!!")
-
-
+print("+" + 10 * "-" + "+")
+print(("|" + " " * 10 + "|\n") * 5, end="")
+print("+" + 10 * "-" + "+")
