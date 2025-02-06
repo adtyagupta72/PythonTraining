@@ -1,5 +1,5 @@
 print("Hello world")
-
+'''
 a = 10
 b = "Aditya"
 c = "Software Developer"
@@ -17,3 +17,42 @@ print("Your name is :", name)
 print("+" + 10 * "-" + "+")
 print(("|" + " " * 10 + "|\n") * 5, end="")
 print("+" + 10 * "-" + "+")
+
+'''
+sheep_counter = 110
+# if sheep_counter >=120:
+#     print("make_a_bed")
+#     print("take_a_shower")
+#     print("sleep_and_dream")
+# print("feed the sheeps")
+
+weather_is_good = True
+if sheep_counter >=120:
+    if weather_is_good:
+        print("make_a_bed")
+        print("take_a_shower")
+        print("sleep_and_dream")
+    else:
+        if sheep_counter>200:
+            print("I cannot go out")
+else:
+    print("Not able to count sheep")
+
+print("feed the sheep")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
