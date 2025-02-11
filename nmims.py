@@ -43,12 +43,45 @@ sheep_counter = 110
 # while True:
 #     print("I'm stuck inside a loop.")
 
-for counter in range(10):
-    print("The value of counter is currently", counter)
+# for counter in range(10):
+#     print("The value of counter is currently", counter)
 
+blocks = int(input("Enter number of blocks you have: "))
+block_needed_at_the_level = 0
+height = 0
+for counter in range(blocks):
+        if block_needed_at_the_level+(height+1) <= blocks:
+            height+=1
+            block_needed_at_the_level += height
+        else:
+            break
+print("Height:", height)
+'''
+blocks      7  
+sum         0   0   1   3   6
+counter         0   1   2   3
+height      0   1   2   3   4
 
+Result:
+block_size                  20
+blocks_needed_at_level          1   3   6   10  15  21
+height                          1   2   3   4   5   6
+counter                         0   1   2   3   4   5
 
+block_size      20
+blocks_needed_at_level      0   1   3   6   10  15
+height                      0   1   2   3   4   5   
+counter                         0   1   2   3   4   5
 
+Process
+    for loop
+        if block_needed_at_the_level+(height+1) <=block:
+            height++
+            block_needed_at_the_level += height
+        else:
+            breaks
+        
+'''
 
 
 
