@@ -79,4 +79,29 @@ print("+" + 10 * "-" + "+")
 print(("|" + " " * 10 + "|\n") * 5, end="")
 print("+" + 10 * "-" + "+")
 
+
+
+while True:
+    print("I am stuck In a loop")'''
+
 '''
+1. declare variables even and odd with vlue 0 to count number of evens and odds
+2. read a number
+3. start a loop which ends on number being 0
+4. Check if the number entered is even or odd
+5. Increment the even or odd number count
+6. read number input
+7. after the loop, print even count and odd count
+'''
+
+number = int(input("Please enter a number, 0 to exit: "))
+even = 0
+odd = 0
+while number !=0:
+    if number % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+    number = int(input("Please enter a number, 0 to exit: "))
+print("Even numbers entered: ", even)
+print("Odd numbers entered: ", odd)
