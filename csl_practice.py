@@ -1,3 +1,5 @@
+from itertools import count
+
 print("H")
 
 
@@ -94,14 +96,59 @@ while True:
 7. after the loop, print even count and odd count
 '''
 
-number = int(input("Please enter a number, 0 to exit: "))
-even = 0
-odd = 0
-while number !=0:
-    if number % 2 == 0:
-        even += 1
-    else:
-        odd += 1
-    number = int(input("Please enter a number, 0 to exit: "))
-print("Even numbers entered: ", even)
-print("Odd numbers entered: ", odd)
+# number = int(input("Please enter a number, 0 to exit: "))
+# even = 0
+# odd = 0
+# while number !=0:
+#     if number % 2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
+#     number = int(input("Please enter a number, 0 to exit: "))
+# print("Even numbers entered: ", even)
+# print("Odd numbers entered: ", odd)
+
+# counter = 0
+# while counter < 100:
+#     counter += 1
+#     print("Counter: ", counter)
+
+# for counter in range(100):
+#     pass
+# print("Counter: ", counter+1)
+
+# for counter in range(2, 8):
+#     print("The value of counter is currently: ", counter)
+
+# for counter in range(2, 8, 3):
+#     print("The value of counter is currently", counter)
+# print("Going in For loop:")
+# for counter in range(1, 1):
+#     print("The value of counter is currently", counter)
+# print("Out of For loop!")
+# print("Going in For loop:")
+# for counter in range(2, 1):
+#     print("The value of counter is currently", counter)
+# print("Out of For loop!")
+
+# power = 1
+# for expo in range(16):
+#     print("2 to the power of", expo, "is", power)
+#     power *= 3
+
+# 2 to the power of 0 is 1
+# 2 to the power of 1 is 2
+# 2 to the power of 2 is 4
+
+# for counter in range(1, 11):
+#     print("2 * ", counter, "=", counter*2)
+
+import time
+for counter in range(5):
+    if counter == 2:
+        # go out
+        continue
+    print(counter+1, "Mississippi")
+    time.sleep(1)
+
+print("Read or not, here I come!")
