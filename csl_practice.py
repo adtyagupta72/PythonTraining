@@ -143,12 +143,24 @@ while True:
 # for counter in range(1, 11):
 #     print("2 * ", counter, "=", counter*2)
 
-import time
-for counter in range(5):
-    if counter == 2:
-        # go out
-        continue
-    print(counter+1, "Mississippi")
-    time.sleep(1)
+# import time
+# for counter in range(5):
+#     if counter == 2:
+#         # go out
+#         continue
+#     print(counter+1, "Mississippi")
+#     time.sleep(1)
+#
+# print("Read or not, here I come!")
 
-print("Read or not, here I come!")
+
+word = input("Please enter a word: ")
+print("Word is: ", word)
+word = word.upper()
+word_without_vowels = ""
+for itr in word:        # word = ADITYA     itr = A
+    print("Letter is: ", itr)
+    if itr == "A" or itr == "E" or itr == "I" or itr == "O" or itr == "U":
+        continue
+    word_without_vowels += itr
+print("Non eaten words are: ", word_without_vowels)
