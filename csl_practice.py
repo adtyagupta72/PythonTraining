@@ -194,8 +194,8 @@ while True:
 # print("Height of pyramid is: ", height )
 
 c0 = int(input("Enter the value of c0:"))
-if c0 == 0:
-    print("c0 cannot be zero")
+if c0 > 0:
+    print("c0 cannot be zero and less then zero")
 else:
     counter = 0
     while c0!= 1:
