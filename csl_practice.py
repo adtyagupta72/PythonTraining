@@ -182,13 +182,27 @@ while True:
 # else:
 #     print("else:", counter)
 
-blocks = int(input("Enter number of blocks:"))
-height = 0
-print("Blocks: ", blocks)
-for counter in range(1, blocks+1):
-    if blocks>= counter:
-        blocks -= counter
-        height += 1
-    else:
-        break
-print("Height of pyramid is: ", height )
+# blocks = int(input("Enter number of blocks:"))
+# height = 0
+# print("Blocks: ", blocks)
+# for counter in range(1, blocks+1):
+#     if blocks>= counter:
+#         blocks -= counter
+#         height += 1
+#     else:
+#         break
+# print("Height of pyramid is: ", height )
+
+c0 = int(input("Enter the value of c0:"))
+if c0 == 0:
+    print("c0 cannot be zero")
+else:
+    counter = 0
+    while c0!= 1:
+        if c0 % 2 ==0:
+            c0 /= 2
+        else:
+            c0 = 3*c0 +1
+        print("c0: ", c0)
+        counter += 1
+    print("Final c0: ", c0, "\n steps it took:", counter)
