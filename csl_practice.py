@@ -154,13 +154,41 @@ while True:
 # print("Read or not, here I come!")
 
 
-word = input("Please enter a word: ")
-print("Word is: ", word)
-word = word.upper()
-word_without_vowels = ""
-for itr in word:        # word = ADITYA     itr = A
-    print("Letter is: ", itr)
-    if itr == "A" or itr == "E" or itr == "I" or itr == "O" or itr == "U":
-        continue
-    word_without_vowels += itr
-print("Non eaten words are: ", word_without_vowels)
+# word = input("Please enter a word: ")
+# print("Word is: ", word)
+# word = word.upper()
+# word_without_vowels = ""
+# for itr in word:        # word = ADITYA     itr = A
+#     print("Letter is: ", itr)
+#     if itr == "A" or itr == "E" or itr == "I" or itr == "O" or itr == "U":
+#         continue
+#     word_without_vowels += itr
+# print("Non eaten words are: ", word_without_vowels)
+
+# counter = 5
+# while counter < 5:
+#     print("Counter: ", counter)
+#     counter += 1
+# else:
+#     print("else counter: ", counter)
+
+# for counter in range(5):
+#     print(counter)
+# else:
+#     print("else:", counter)
+# counter = 111
+# for counter in range(2, 1):
+#     print(counter)
+# else:
+#     print("else:", counter)
+
+blocks = int(input("Enter number of blocks:"))
+height = 0
+print("Blocks: ", blocks)
+for counter in range(1, blocks+1):
+    if blocks>= counter:
+        blocks -= counter
+        height += 1
+    else:
+        break
+print("Height of pyramid is: ", height )
