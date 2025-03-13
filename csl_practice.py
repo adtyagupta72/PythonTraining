@@ -207,6 +207,34 @@ while True:
 #         counter += 1
 #     print("Final c0: ", c0, "\n steps it took:", counter)
 
+numbers = [10, 5, 7, 2, 1]
+print("List contents: ", numbers)  # Current list contents
+
+print("first element content: ", numbers[0])  # Current list contents.
+print("second element content: ", numbers[1])  # Current list contents.
+print("third element content: ", numbers[2])  # Current list contents.
+print("fourth element content: ", numbers[3])  # Current list contents.
+print("fifth element content: ", numbers[4])  # Current list contents.
+
+numbers[0] = 111
+print("New list contents: ", numbers)  # Current list contents.
+
+numbers[1] = numbers[4]  # Copying value of the fifth element to the second.
+print("New list contents:", numbers)  # Printing current list contents.
+
+print(len(numbers))
+
+del numbers[1]
+print(len(numbers))
+print(numbers)
+
+numbers = [111, 7, 2, 1]
+print(numbers[-1])
+
+numbers = [111, 7, 2, 1]
+print(numbers[-2])
+
+
 number = [1, 2, 3, 4, 5]
 var = int(input("Enter a number:"))
 # print(len(number)//2)
