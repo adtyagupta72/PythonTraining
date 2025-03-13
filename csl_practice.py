@@ -240,3 +240,39 @@ var = int(input("Enter a number:"))
 # print(len(number)//2)
 number[ len(number)//2 ] = var
 print(number)
+
+list = [5, 4, 3, 2, 1]
+print("Current List", list)
+list.append(6)
+print("Updated list after append:", list)
+
+list.insert(2, 7)
+print("Updated list after insert:", list)
+list.insert(0, 8)
+print("Updated list after insert:", list)
+
+list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+for count in range(len(list)):
+    print(list[count])
+
+list=[]
+for count in range(10):
+    list.append(count+1)
+print(list)
+
+list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+for count in range(10):
+    list[count] +=1
+print(list)
+
+list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+sum = 0
+for count in range(len(list)):
+    sum = sum + list[count]
+print(sum)
+
+'''
+count   0   0   1   2   3       4       5       6       7       8       9
+sum     0   10  30  60  100     150     210     280     360     450     550
+'''
