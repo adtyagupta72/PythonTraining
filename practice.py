@@ -48,14 +48,29 @@
 # print("The largest number is:", largest_number)
 # print("The lowest number is:", lowest_number)
 
-for counter in range(10):
-    print("The value of counter is currently", counter)
-print("-------")
-for counter in range(2, 8):
-    print("The value of counter is currently", counter)
-print("-------")
-for counter in range(2, 8, 3):
-    print("The value of counter is currently", counter)
-print("-------")
+# for counter in range(10):
+#     print("The value of counter is currently", counter)
+# print("-------")
+# for counter in range(2, 8):
+#     print("The value of counter is currently", counter)
+# print("-------")
+# for counter in range(2, 8, 3):
+#     print("The value of counter is currently", counter)
+# print("-------")
 
+temps = [[0.0 for h in range(24)] for d in range(31)]
+#
+# The matrix is magically updated here.
+#
 
+total = 0.0
+
+for day in temps:
+    print("day[11]: ", day[11])
+    print("day: ", day)
+    print("len(day): ", len(day))
+    total += day[11]
+
+average = total / 31
+
+print("Average temperature at noon:", average)

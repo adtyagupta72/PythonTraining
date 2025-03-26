@@ -276,3 +276,61 @@ while True:
 count   0   0   1   2   3       4       5       6       7       8       9
 sum     0   10  30  60  100     150     210     280     360     450     550
 '''
+
+# numbers = [10, 5, 7, 2, 1]
+# print("0th Element: ", numbers[0])
+# print("1th Element: ", numbers[1])
+# print("2th Element: ", numbers[2])
+# print("3th Element: ", numbers[3])
+# print("4th Element: ", numbers[4])
+#
+# count = 0
+# print("0th Element: ", numbers[count])
+# count+=1
+# print("1th Element: ", numbers[count])
+# count+=1
+# print("2th Element: ", numbers[count])
+# count+=1
+# print("3th Element: ", numbers[count])
+# count+=1
+# print("4th Element: ", numbers[count])
+#
+# numbers = [1, 2, 3, 4, 5]
+# num = int(input("Please enter an integer value:"))
+# numbers[len(numbers) // 2] = num
+# print(numbers)
+
+
+list = [10, 1, 8, 3, 5]
+#        0  1  2  3  4
+#traversing a list
+
+for count in range(len(list)):
+    # print("Index: ", count)
+    # print("Element: ", list[count])
+    print("list[", count,"] => ", list[count])
+
+for element in list:
+    print("element => ", element)
+
+#swapping list elements
+print(list)
+list[0], list[4] = list[4], list[0]
+list[1], list[3] = list[3], list[1]
+print(list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
