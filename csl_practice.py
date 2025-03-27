@@ -1,5 +1,5 @@
 from itertools import count
-
+'''
 print("H")
 
 
@@ -29,7 +29,7 @@ print("o")
 
 print("Hello", "Suraj,", "how", "are", "you?")
 
-'''
+
 Hello
 
 
@@ -47,7 +47,7 @@ o
 **********
 **********
 **********
-'''
+
 
 #print("**********\n**********\n**********\n**********\n**********\n**********\n")
 
@@ -62,7 +62,7 @@ print("2.2")
 print(True)
 
 print("Hello world")
-'''
+
 a = 10
 b = "Aditya"
 c = "Software Developer"
@@ -301,25 +301,34 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # print(numbers)
 
 
-list = [10, 1, 8, 3, 5]
+# list = [10, 1, 8, 3, 5]
 #        0  1  2  3  4
 #traversing a list
 
-for count in range(len(list)):
-    # print("Index: ", count)
-    # print("Element: ", list[count])
-    print("list[", count,"] => ", list[count])
-
-for element in list:
-    print("element => ", element)
+# for count in range(len(list)):
+#     # print("Index: ", count)
+#     # print("Element: ", list[count])
+#     print("list[", count,"] => ", list[count])
+#
+# for element in list:
+#     print("element => ", element)
 
 #swapping list elements
-print(list)
-list[0], list[4] = list[4], list[0]
-list[1], list[3] = list[3], list[1]
-print(list)
+# print(list)
+# list[0], list[4] = list[4], list[0]
+# list[1], list[3] = list[3], list[1]
+# print(list)
 
-
+# list = [9, 1, 3, 4, 7, 8, 6, 5, 2]
+# count = 0
+# for i in range(len(list)-1):
+#     for j in range(len(list)-1-i):
+#         if list[j] > list[j+1]:
+#             list[j], list[j + 1] = list[j+1], list[j]
+#         count += 1
+#
+# print(list)
+# print("Loop ram for :",count," times")
 
 
 
