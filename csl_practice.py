@@ -330,7 +330,21 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # print(list)
 # print("Loop ram for :",count," times")
 
+#list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print("list before reverse = ",list)
+print("Debugging: len(list) // 2 =", len(list) // 2)
 
+if len(list) // 2 %2 == 0:
+    t = len(list) / 2
+else:
+    t = len(list) // 2 - 1
+print("Debugging: type(t): ", type(t))
+t = int(t)
+print("Debugging: type(t): ", type(t))
+for index in range(t):
+    list[index], list[-(index + 1)] = list[-(index+1)], list[index]
+print("list after reverse = ",list)
 
 
 
