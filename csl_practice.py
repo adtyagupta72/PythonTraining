@@ -346,23 +346,28 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 #     list[index], list[-(index + 1)] = list[-(index+1)], list[index]
 # print("list after reverse = ",list)
 
-number = [11, 3, 15, 5, 1, 9, 7, 17, 13]
+# number = [11, 3, 15, 5, 1, 9, 7, 17, 13]
 # max = -1
 # for element in number:
 #     if max < element:
 #         max = element
 # print("Max value is: ", max)
-found = 0
-for index in range(len(number)):
-    if number[index] == 5:
-        print("Found 5 at index:", index)
-        found = 1
-        break
+# found = 0
+# for index in range(len(number)):
+#     if number[index] == 5:
+#         print("Found 5 at index:", index)
+#         found = 1
+#         break
+#
+# if found == 0:
+#     print("Sorry, 5 is not found!")
 
-if found == 0:
-    print("Sorry, 5 is not found!")
-
-
-
+lottery = [3, 7, 11, 42, 34, 49]
+drawn = [5, 11, 9, 42, 3, 49]
+hit = 0
+for element in lottery:
+    if element in drawn:
+       hit +=1
+print(hit)
 
 
