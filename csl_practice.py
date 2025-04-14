@@ -370,17 +370,28 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 #        hit +=1
 # print(hit)
 
-list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
-deleted = []
-for index in range(len(list)-1):
-    for index1 in range(index + 1, len(list)):
-        if index1 not in deleted:
-            if list[index] == list[index1]:
-                deleted.append(index1)
-print(list)
-print(deleted)
-deleted.sort()
-print(deleted)
-for index in range(len(deleted)):
-    del list[deleted[len(deleted)-(index+1)]]
-print(list)
+# list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+# deleted = []
+# for index in range(len(list)-1):
+#     for index1 in range(index + 1, len(list)):
+#         if index1 not in deleted:
+#             if list[index] == list[index1]:
+#                 deleted.append(index1)
+# print(list)
+# print(deleted)
+# deleted.sort()
+# print(deleted)
+# for index in range(len(deleted)):
+#     del list[deleted[len(deleted)-(index+1)]]
+# print(list)
+
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+print("My List: ", list)
+print("5th element: ", list[4])
+del list[0]
+print("My List: ", list)
+print("5th element: ", list[4])
+
+del list[4]
+print("My List: ", list)
+print("5th element: ", list[4])
