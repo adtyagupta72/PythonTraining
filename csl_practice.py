@@ -395,3 +395,11 @@ print("5th element: ", list[4])
 del list[4]
 print("My List: ", list)
 print("5th element: ", list[4])
+
+for count in range(len(list)-1):
+    del list[0]
+    print(list)
+print("My List: ", list)
+
+del list
+print("My List: ", list)
