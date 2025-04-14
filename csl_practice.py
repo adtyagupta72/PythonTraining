@@ -385,11 +385,22 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 #     del list[deleted[len(deleted)-(index+1)]]
 # print(list)
 
-def message(number):
-    print("Enter a number:", number)
-#message(10)
-number = 1234
-message(1)
-print("number:", number)
+# def message(number):
+#     print("Enter a number:", number)
+# #message(10)
+# number = 1234
+# message(1)
+# print("number:", number)
 
+def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
 
+introduction(first_name = "James", last_name = "Bond")
+introduction(last_name = "Skywalker", first_name = "Luke")
+
+def testFunction():
+    print("Function execution")
+    #return
+
+var = testFunction()
+print("var:", var)
