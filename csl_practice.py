@@ -386,20 +386,27 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # print(list)
 
 list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-print("My List: ", list)
-print("5th element: ", list[4])
-del list[0]
-print("My List: ", list)
-print("5th element: ", list[4])
+# print("My List: ", list)
+# print("5th element: ", list[4])
+# del list[0]
+# print("My List: ", list)
+# print("5th element: ", list[4])
+#
+# del list[4]
+# print("My List: ", list)
+# print("5th element: ", list[4])
+#
+# for count in range(len(list)-1):
+#     del list[0]
+#     print(list)
+# print("My List: ", list)
+#
+# del list
+# print("My List: ", list)
 
-del list[4]
-print("My List: ", list)
-print("5th element: ", list[4])
+print(list)
+for count in range(len(list)):
+    #print("count:", count) # 0 1 2 3 4 5 6 7 8 9
+    print("list[-",count+1,"]:", list[-1*(count+1)])
 
-for count in range(len(list)-1):
-    del list[0]
-    print(list)
-print("My List: ", list)
-
-del list
-print("My List: ", list)
+#print("list[-11]", list[-11])
