@@ -384,3 +384,12 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # for index in range(len(deleted)):
 #     del list[deleted[len(deleted)-(index+1)]]
 # print(list)
+
+def message(number):
+    print("Enter a number:", number)
+#message(10)
+number = 1234
+message(1)
+print("number:", number)
+
+
