@@ -114,9 +114,33 @@ for count in range(len(list)):
 
 #print("list[-11]", list[-11])
 
+# abc.print(list)
+# abc is changed
+#
+# print(list)
 
+# list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+# for element in list:                # oiterator is givinng element one-by-one
+#     print("element: ", element)
+#
+# for index in range(len(list)):
+#     print("index: ", index)
+#     print("element: ", list[index])
 
-
-
-
-
+list = [8, 10, 6, 2, 4]
+counter = 0
+for count in range(len(list)):
+    for count1 in range(len(list)-1-count):
+        if list[count1+1] < list[count1]:
+            list[count1 + 1], list[count1] = list[count1], list[count1+1]
+        counter+=1
+print(list)
+print(counter)
+'''
+count       0        0       0       0       
+count1      0        1       2       3     
+check1    (8, 10)   (10,6)  (6,2)   (6,4)   => [8, 6, 2, 4, 10]     =>10    0
+check2    (8,6)     (8,2)   (8,4)           => [6, 2, 4, 8, 10]     =>8     1
+check3    (6, 2)    (6,4)                   => [2, 4, 6, 8, 10]                 2
+check4    (2,4)                             => [2, 4, 6, 8, 10]
+'''
