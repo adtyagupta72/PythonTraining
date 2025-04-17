@@ -127,15 +127,15 @@ for count in range(len(list)):
 #     print("index: ", index)
 #     print("element: ", list[index])
 
-list = [8, 10, 6, 2, 4]
-counter = 0
-for count in range(len(list)):
-    for count1 in range(len(list)-1-count):
-        if list[count1+1] < list[count1]:
-            list[count1 + 1], list[count1] = list[count1], list[count1+1]
-        counter+=1
-print(list)
-print(counter)
+# list = [8, 10, 6, 2, 4]
+# counter = 0
+# for count in range(len(list)):
+#     for count1 in range(len(list)-1-count):
+#         if list[count1+1] < list[count1]:
+#             list[count1 + 1], list[count1] = list[count1], list[count1+1]
+#         counter+=1
+# print(list)
+# print(counter)
 '''
 count       0        0       0       0       
 count1      0        1       2       3     
@@ -144,3 +144,50 @@ check2    (8,6)     (8,2)   (8,4)           => [6, 2, 4, 8, 10]     =>8     1
 check3    (6, 2)    (6,4)                   => [2, 4, 6, 8, 10]                 2
 check4    (2,4)                             => [2, 4, 6, 8, 10]
 '''
+
+# Slice operator
+# list_1 = [1]
+# list_2 = list_1[:]
+# list_1[0] = 2
+# print(list_2)
+#
+# my_list = [10, 8, 6, 4, 2]
+# new_list = my_list[1:3]
+# print(new_list)     #8, 6
+
+
+list=[]
+
+# for i in range(8):
+#     list.append("WHITE_PAWN")
+
+list = ["WHITE_PAWN" for i in range(8)]
+# ["WHITE_PAWN","WHITE_PAWN","WHITE_PAWN","WHITE_PAWN","WHITE_PAWN",...."WHITE_PAWN"]
+print(list)
+
+squares = [x ** 2 for x in range(10)]
+print(squares)
+
+twos = [2 ** i for i in range(8)]
+print(twos)
+
+odds = [x for x in squares if x % 2 != 0 ]
+
+print(odds)         #
+
+board = []
+for i in range(8):
+    row = ["EMPTY" for j in range(8)]
+    board.append(row)
+    print(board[i])
+
+# [
+#     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
+#     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
+#     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
+#     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
+#     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
+#     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
+#     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
+#     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
+# ]
