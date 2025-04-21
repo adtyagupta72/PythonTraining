@@ -405,22 +405,35 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # var = testFunction()
 # print("var:", var)
 
-def is_year_leap(year):
-    if year % 4 == 0 and year % 100 != 0:
-        return True
-    elif year % 400 == 0:
-        return True
-    else:
-        return False
+# def is_year_leap(year):
+#     if year % 4 == 0 and year % 100 != 0:
+#         return True
+#     elif year % 400 == 0:
+#         return True
+#     else:
+#         return False
+#
+# test_data = [1900, 2000, 2016, 1987]
+# test_results = [False, True, True, False]
+# for i in range(len(test_data)):
+#     yr = test_data[i]
+#     print(yr,"->",end="")
+#     result = is_year_leap(yr)
+#     # print("result: ", result)
+#     if result == test_results[i]:
+#         print("OK")
+#     else:
+#         print("Failed")
 
-test_data = [1900, 2000, 2016, 1987]
-test_results = [False, True, True, False]
-for i in range(len(test_data)):
-    yr = test_data[i]
-    print(yr,"->",end="")
-    result = is_year_leap(yr)
-    # print("result: ", result)
-    if result == test_results[i]:
-        print("OK")
+def fac(n):
+    if n<=1:
+        print("n = ", n)
+        print("returning 1 from less than equals to 1")
+        return 1
     else:
-        print("Failed")
+        print("calling fac(",n-1,") ")
+        res = fac(n - 1) * n
+        print("finally returning res=", res)
+        return res
+
+print(fac(5))

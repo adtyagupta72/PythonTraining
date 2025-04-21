@@ -58,19 +58,32 @@
 #     print("The value of counter is currently", counter)
 # print("-------")
 
-temps = [[0.0 for h in range(24)] for d in range(31)]
+# temps = [[0.0 for h in range(24)] for d in range(31)]
 #
 # The matrix is magically updated here.
 #
 
-total = 0.0
-
-for day in temps:
-    print("day[11]: ", day[11])
-    print("day: ", day)
-    print("len(day): ", len(day))
-    total += day[11]
-
-average = total / 31
-
-print("Average temperature at noon:", average)
+# total = 0.0
+#
+# for day in temps:
+#     print("day[11]: ", day[11])
+#     print("day: ", day)
+#     print("len(day): ", len(day))
+#     total += day[11]
+#
+# average = total / 31
+#
+# print("Average temperature at noon:", average)
+tuple_1 = (1, 2, 3, 4, 5, 6)
+tuple_2 = "A", "B", "C", "D", "E", "F"
+print(tuple_1)
+print(tuple_2)
+print(type(tuple_1))
+print(type(tuple_2))
+print(len(tuple_2))
+# del tuple_1[0]
+# print(tuple_1)
+print(tuple_1+tuple_2)
+print(type(tuple_1+tuple_2))
+print(tuple_1*2)
+print(type(tuple_1*2))
