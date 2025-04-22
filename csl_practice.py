@@ -438,12 +438,80 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 #
 # print(fac(5))
 
-def fib(n):
-    if n < 1:
-        return None
-    if n < 3:
-        return 1
-    res = fib(n - 1) + fib(n - 2)
-    print(res)
-    return res
-print(fib(10))
+# def fib(n):
+#     if n < 1:
+#         return None
+#     if n < 3:
+#         return 1
+#     res = fib(n - 1) + fib(n - 2)
+#     print(res)
+#     return res
+# print(fib(10))
+
+# tuple_1 = (1,2, 3, 4, 5)
+# tuple_2 = 1, 2, 3, 4, 5
+# print(tuple_1)
+# print(tuple_2)
+# print(type(tuple_1))
+# print(type(tuple_2))
+#
+# empty_tuple = ()
+# print(empty_tuple)
+# print(type(empty_tuple))
+#
+# new_tuple = 1,
+# print(new_tuple)
+# print(type(new_tuple))
+#
+# list = [1, 2, 3, 4, 5]
+# list2 = [6, 7, 8, 9, 10]
+#
+# list3 = list+list2
+# print(list3)
+# list4 = list*3
+# print(list4)
+
+tuple_1 = (1,2, 3, 4, 5)
+tuple_2 = 6, 7, 8, 9, 10
+tuple_3 = tuple_1 + tuple_2
+print(tuple_3)
+tuple_4 = tuple_3 *2
+print(tuple_4)
+
+for element in tuple_1:
+    print(element)
+
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
+dictionary["adam"] = 123
+print(dictionary)
+dictionary.popitem()
+print(dictionary)
+
+dictionary.clear()
+print(dictionary)
+
+# copy_dictionary = dictionary.copy()
+# print(copy_dictionary)
+# copy_dictionary["cat"] = "No chat"
+# print(copy_dictionary)
+# print(dictionary)
+# for key in dictionary.keys():
+#     print(key, "->", dictionary[key])
+
+# for key, value in dictionary.items():
+#     print(key, "->", value)
+#
+# phone_numbers = {'boss' : 5551234567, 'Suzy' : 22657854310}
+# empty_dictionary = {}
+# print(dictionary)
+# print(type(dictionary))
+# print(phone_numbers)
+# print(type(phone_numbers))
+#
+# print(dictionary['cat'])
+# print(phone_numbers['Suzy'])
+
+list = [1,2 ,3, 4, 5]
+del list[:]     # []
+del list        #error

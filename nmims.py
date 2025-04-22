@@ -201,3 +201,9 @@ for day in range(31):
 avg=sum/31
 print(avg)
 
+# Calculating highest temperature in the month
+highest=-200
+for day in range(31):
+    for hour in range(24):
+        highest = max(highest, temps[day][hour])
+print(highest)
