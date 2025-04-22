@@ -191,3 +191,13 @@ for i in range(8):
 #     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
 #     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
 # ]
+
+temps = [[hour for hour in range(24)] for month in range(31)]
+print(temps)
+# Calculating Average noon temperature
+sum=0
+for day in range(31):
+    sum=sum+temps[day][11]
+avg=sum/31
+print(avg)
+
