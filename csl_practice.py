@@ -425,15 +425,25 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 #     else:
 #         print("Failed")
 
-def fac(n):
-    if n<=1:
-        print("n = ", n)
-        print("returning 1 from less than equals to 1")
-        return 1
-    else:
-        print("calling fac(",n-1,") ")
-        res = fac(n - 1) * n
-        print("finally returning res=", res)
-        return res
+# def fac(n):
+#     if n<=1:
+#         print("n = ", n)
+#         print("returning 1 from less than equals to 1")
+#         return 1
+#     else:
+#         print("calling fac(",n-1,") ")
+#         res = fac(n - 1) * n
+#         print("finally returning res=", res)
+#         return res
+#
+# print(fac(5))
 
-print(fac(5))
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+    res = fib(n - 1) + fib(n - 2)
+    print(res)
+    return res
+print(fib(10))
