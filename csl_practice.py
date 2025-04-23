@@ -471,25 +471,39 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # list4 = list*3
 # print(list4)
 
-tuple_1 = (1,2, 3, 4, 5)
-tuple_2 = 6, 7, 8, 9, 10
-tuple_3 = tuple_1 + tuple_2
-print(tuple_3)
-tuple_4 = tuple_3 *2
-print(tuple_4)
+# tuple_1 = (1,2, 3, 4, 5)
+# tuple_2 = 6, 7, 8, 9, 10
+# tuple_3 = tuple_1 + tuple_2
+# print(tuple_3)
+# tuple_4 = tuple_3 *2
+# print(tuple_4)
+#
+# for element in tuple_1:
+#     print(element)
 
-for element in tuple_1:
-    print(element)
-
-dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
-
-dictionary["adam"] = 123
-print(dictionary)
-dictionary.popitem()
-print(dictionary)
-
-dictionary.clear()
-print(dictionary)
+# dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+# print(dictionary)
+# dictionary.update({"adam":"adaam"})
+# print(dictionary)
+# dictionary.update({"zadam":"zadaam"})
+# print(dictionary)
+# #dictionary.sort()
+# for key in dictionary:
+#     print(key,"->",dictionary[key])
+#
+# dictionary.popitem()
+# print(dictionary)
+# dictionary.popitem()
+# print(dictionary)
+# dictionary.popitem()
+# print(dictionary)
+# dictionary["adam"] = 123
+# print(dictionary)
+# dictionary.popitem()
+# print(dictionary)
+#
+# dictionary.clear()
+# print(dictionary)
 
 # copy_dictionary = dictionary.copy()
 # print(copy_dictionary)
@@ -512,6 +526,28 @@ print(dictionary)
 # print(dictionary['cat'])
 # print(phone_numbers['Suzy'])
 
-list = [1,2 ,3, 4, 5]
-del list[:]     # []
-del list        #error
+# list = [1,2 ,3, 4, 5]
+# del list[:]     # []
+# del list        #error
+school_class = {}
+while True:
+    name = input("Enter the student's name: ")
+    if name == '':
+        break
+
+    score = int(input("Enter the student's score (0-10): "))
+    if score not in range(0, 11):
+        break
+
+    if name in school_class:
+        school_class[name] += (score,)
+    else:
+        school_class[name] = (score,)
+
+for name in sorted(school_class.keys()):
+    adding = 0
+    counter = 0
+    for score in school_class[name]:
+        adding += score
+        counter += 1
+    print(name, ":", adding / counter)
