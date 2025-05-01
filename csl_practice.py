@@ -529,25 +529,49 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # list = [1,2 ,3, 4, 5]
 # del list[:]     # []
 # del list        #error
-school_class = {}
-while True:
-    name = input("Enter the student's name: ")
-    if name == '':
-        break
+# school_class = {}
+# while True:
+#     name = input("Enter the student's name: ")
+#     if name == '':
+#         break
+#
+#     score = int(input("Enter the student's score (0-10): "))
+#     if score not in range(0, 11):
+#         break
+#
+#     if name in school_class:
+#         school_class[name] += (score,)
+#     else:
+#         school_class[name] = (score,)
+#
+# for name in sorted(school_class.keys()):
+#     adding = 0
+#     counter = 0
+#     for score in school_class[name]:
+#         adding += score
+#         counter += 1
+#     print(name, ":", adding / counter)
 
-    score = int(input("Enter the student's score (0-10): "))
-    if score not in range(0, 11):
-        break
+# try:
+#     value = int(input("Enter a value for reciprocal result:"))
+#     print("The reciprocal of ", value, "is", 1 / value)
+# except:
+#     print("Sorry, my program is not working!")
 
-    if name in school_class:
-        school_class[name] += (score,)
-    else:
-        school_class[name] = (score,)
+# try:
+#     value = int(input("Enter a value for reciprocal result:"))
+#     try:
+#         print("The reciprocal of ", value, "is", 1 / value)
+#     except:
+#         print("Please enter anything other then zero!")
+# except:
+#     print("Please enter something!, Blank is not acceptable!")
 
-for name in sorted(school_class.keys()):
-    adding = 0
-    counter = 0
-    for score in school_class[name]:
-        adding += score
-        counter += 1
-    print(name, ":", adding / counter)
+try:
+    value = int(input("Enter a value for reciprocal result:"))
+    print("The reciprocal of ", value, "is", 1 / value)
+except ValueError:
+    print("Value entered is not appropriate!")
+except ZeroDivisionError:
+    print("Zero cannot be accepted as an input!")
+
