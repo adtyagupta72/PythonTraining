@@ -567,11 +567,20 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # except:
 #     print("Please enter something!, Blank is not acceptable!")
 
-try:
-    value = int(input("Enter a value for reciprocal result:"))
-    print("The reciprocal of ", value, "is", 1 / value)
-except ValueError:
-    print("Value entered is not appropriate!")
-except ZeroDivisionError:
-    print("Zero cannot be accepted as an input!")
+# try:
+#     value = int(input("Enter a value for reciprocal result:"))
+#     print("The reciprocal of ", value, "is", 1 / value)
+# except ValueError:
+#     print("Value entered is not appropriate!")
+# except ZeroDivisionError:
+#     print("Zero cannot be accepted as an input!")
+# except:
+#     print("Sorry for the inconvenience my code failed!")
 
+temperature = float(input('Enter current temperature:'))
+if temperature > 0:
+    print("Above zero")
+elif temperature < 0:
+    prin("Below zero")
+else:
+    print("Zero")
