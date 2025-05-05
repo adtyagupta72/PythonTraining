@@ -74,16 +74,24 @@
 # average = total / 31
 #
 # print("Average temperature at noon:", average)
-tuple_1 = (1, 2, 3, 4, 5, 6)
-tuple_2 = "A", "B", "C", "D", "E", "F"
-print(tuple_1)
-print(tuple_2)
-print(type(tuple_1))
-print(type(tuple_2))
-print(len(tuple_2))
-# del tuple_1[0]
+# tuple_1 = (1, 2, 3, 4, 5, 6)
+# tuple_2 = "A", "B", "C", "D", "E", "F"
 # print(tuple_1)
-print(tuple_1+tuple_2)
-print(type(tuple_1+tuple_2))
-print(tuple_1*2)
-print(type(tuple_1*2))
+# print(tuple_2)
+# print(type(tuple_1))
+# print(type(tuple_2))
+# print(len(tuple_2))
+# # del tuple_1[0]
+# # print(tuple_1)
+# print(tuple_1+tuple_2)
+# print(type(tuple_1+tuple_2))
+# print(tuple_1*2)
+# print(type(tuple_1*2))
+
+def f(x):
+    if x == 0:
+        return 0
+    return x + f(x - 1)
+
+
+print(f(3))
