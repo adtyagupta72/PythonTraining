@@ -577,10 +577,31 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # except:
 #     print("Sorry for the inconvenience my code failed!")
 
-temperature = float(input('Enter current temperature:'))
-if temperature > 0:
-    print("Above zero")
-elif temperature < 0:
-    prin("Below zero")
-else:
-    print("Zero")
+# temperature = float(input('Enter current temperature:'))
+# if temperature > 0:
+#     print("Above zero")
+# elif temperature < 0:
+#     prin("Below zero")
+# else:
+#     print("Zero")
+#import math
+# print(math.exp(12))
+#
+# print(math.sin(1))
+
+# def sin(x):
+#     if 2 * x == pi:
+#         return 0.99999999
+#     else:
+#         return None
+#
+# pi = 3.14
+#
+# print(sin(pi/2))
+# print(math.sin(math.pi/2))
+
+from math import sin, pi, exp
+# Selective import form module
+
+print(sin(pi/2))
+print(exp(2))

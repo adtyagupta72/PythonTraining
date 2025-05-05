@@ -88,10 +88,16 @@
 # print(tuple_1*2)
 # print(type(tuple_1*2))
 
-def f(x):
-    if x == 0:
-        return 0
-    return x + f(x - 1)
+# def f(x):
+#     if x == 0:
+#         return 0
+#     return x + f(x - 1)
+#
+#
+# print(f(3))
 
-
-print(f(3))
+from math import sin, pi, pow, e, exp, log
+print(sin(pi/2))
+print(pow(e, 1) == exp(log(e)))
+print(pow(2, 2) == exp(2 * log(2)))
+print(log(e, e) == exp(0))
