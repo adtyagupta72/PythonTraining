@@ -610,6 +610,44 @@ import math
 # print(ganit.sin(ganit.pi/2))
 # print(ganit.exp(2))
 
-from math import sin as si, exp as e, pi as p
-print(si(p/2))
-print(e(2))
+# from math import sin as si, exp as e, pi as p
+# print(si(p/2))
+# print(e(2))
+
+# import math
+# print(math.sin(math.pi/2))
+# print(dir(math))
+# print("asinh" in dir(math))
+# from math import pi, radians, degrees, sin, cos, tan, asin
+# ad = 90
+# ar = radians(ad)
+# ad = degrees(ar)
+#
+# print(ad == 90.)
+# print(ar == pi / 2.)
+# print(sin(ar) / cos(ar) == tan(ar))
+# print(asin(sin(ar)) == ar)
+
+# from random import random, seed, randrange, randint, choice, sample
+# #seed()
+# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for i in range(5):
+#     print(choice(my_list))
+#     print(sample(my_list, 4))
+#     print(sample(my_list, 7))
+#     #print(random(), end=",")
+    #print(randrange(1, 101, 5))
+    #print(randint(1, 10))
+
+from platform import platform, machine, processor, system, version, python_implementation, python_version_tuple
+
+print(platform())
+print(platform(1))
+print(platform(0, 1))
+
+print(machine())
+print(processor())
+print(system())
+print(version())
+print(python_implementation())
+print(python_version_tuple())
