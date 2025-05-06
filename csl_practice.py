@@ -584,7 +584,7 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 #     prin("Below zero")
 # else:
 #     print("Zero")
-#import math
+import math
 # print(math.exp(12))
 #
 # print(math.sin(1))
@@ -600,8 +600,16 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # print(sin(pi/2))
 # print(math.sin(math.pi/2))
 
-from math import sin, pi, exp
-# Selective import form module
+# from math import sin, pi, exp
+# # Selective import form module
+#
+# print(sin(pi/2))
+# print(exp(2))
 
-print(sin(pi/2))
-print(exp(2))
+# import math as ganit #aliasing
+# print(ganit.sin(ganit.pi/2))
+# print(ganit.exp(2))
+
+from math import sin as si, exp as e, pi as p
+print(si(p/2))
+print(e(2))
