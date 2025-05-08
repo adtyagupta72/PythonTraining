@@ -584,8 +584,12 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 #     prin("Below zero")
 # else:
 #     print("Zero")
-import math
+
+# import math
 # print(math.exp(12))
+#
+# import mint     # make_money()
+# print(mint.make_money())
 #
 # print(math.sin(1))
 
@@ -639,15 +643,21 @@ import math
     #print(randrange(1, 101, 5))
     #print(randint(1, 10))
 
-from platform import platform, machine, processor, system, version, python_implementation, python_version_tuple
+# from platform import platform, machine, processor, system, version, python_implementation, python_version_tuple
+#
+# print(platform())
+# print(platform(1))
+# print(platform(0, 1))
+# print("------------")
+# print(platform())
+# print(platform(True, False))
+# print(platform(False, True))
+# print(platform(True, True))
+# print("------------")
+# print(machine())
+# print(processor())
+# print(system())
+# print(version())
+# print(python_implementation())
+# print(python_version_tuple())
 
-print(platform())
-print(platform(1))
-print(platform(0, 1))
-
-print(machine())
-print(processor())
-print(system())
-print(version())
-print(python_implementation())
-print(python_version_tuple())
