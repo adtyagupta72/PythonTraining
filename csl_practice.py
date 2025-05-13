@@ -715,3 +715,6 @@ for index in range(len(word)):
     else:
         print(word[index], end="")
 print(word)
+
+for char in word:
+    print("char: ",char)
