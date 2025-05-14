@@ -661,60 +661,75 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # print(python_implementation())
 # print(python_version_tuple())
 
-word = "Hello"
-print(len(word))
+# word = "Hello"
+# print(len(word))
+#
+# word = ""
+# print(len(word))
+#
+# word = " "
+# print(len(word))
+#
+# word = "I\"m"
+# print(len(word))
+#
+# word = '''whebckwebc
+# 1
+# 2
+# 3
+# 3
+# wevkjnwejvkn'''
+# print(len(word))
+#
+# word = "Aditya\nGupta"
+# print(len(word))
+# print(word)
+#
+# stringOne = "One"
+# stringTwo = "Two"
+#
+# print(stringOne+stringTwo)
+# print(stringOne*4)
+# print(4*stringTwo)
+#
+# print(ord("a"))
+# print(ord(" "))
+# #print(ord(""))
+#
+# print(chr(97))
+# print(chr(98))
+#
+# print(chr(ord("a")))
+#
+# word = "My string is awesome!"
+# print(word[5])
+# print(word[14])
+#
+# for index in range(len(word)):
+#     if word[index] == "a" or \
+#             word[index] == "e" or \
+#             word[index] == "i" or \
+#             word[index] == "o" or\
+#             word[index] == "u":
+#         print("1", end="")
+#     else:
+#         print(word[index], end="")
+# print(word)
+#
+# for char in word:
+#     print("char: ",char)
 
-word = ""
-print(len(word))
+alpha = "abdefg"
+print(alpha[1:3])
+print(alpha[3:])
+print(alpha[3:-2])
+print(alpha[-3:4])
+print("-> ", alpha[1:4:2])#
+print(alpha[::2]) # range(start, end, step)
+print(alpha[1::2])
 
-word = " "
-print(len(word))
+alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-word = "I\"m"
-print(len(word))
-
-word = '''whebckwebc
-1
-2
-3
-3
-wevkjnwejvkn'''
-print(len(word))
-
-word = "Aditya\nGupta"
-print(len(word))
-print(word)
-
-stringOne = "One"
-stringTwo = "Two"
-
-print(stringOne+stringTwo)
-print(stringOne*4)
-print(4*stringTwo)
-
-print(ord("a"))
-print(ord(" "))
-#print(ord(""))
-
-print(chr(97))
-print(chr(98))
-
-print(chr(ord("a")))
-
-word = "My string is awesome!"
-print(word[5])
-print(word[14])
-
-for index in range(len(word)):
-    if word[index] == "a" or \
-            word[index] == "e" or \
-            word[index] == "i" or \
-            word[index] == "o" or\
-            word[index] == "u":
-        print("1", end="")
-    else:
-        print(word[index], end="")
-print(word)
-
-for char in word:
-    print("char: ",char)
+print("f" in alphabet)
+print("f" not in alphabet)
+print("fab" in alphabet)
