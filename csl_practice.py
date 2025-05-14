@@ -719,17 +719,85 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # for char in word:
 #     print("char: ",char)
 
-alpha = "abdefg"
-print(alpha[1:3])
-print(alpha[3:])
-print(alpha[3:-2])
-print(alpha[-3:4])
-print("-> ", alpha[1:4:2])#
-print(alpha[::2]) # range(start, end, step)
-print(alpha[1::2])
+# alpha = "abdefg"
+# print(alpha[1:3])
+# print(alpha[3:])
+# print(alpha[3:-2])
+# print(alpha[-3:4])
+# print("-> ", alpha[1:4:2])#
+# print(alpha[::2]) # range(start, end, step)
+# print(alpha[1::2])
+#
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+#
+# print("f" in alphabet)
+# print("f" not in alphabet)
+# print("fab" in alphabet)
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+# del alphabet[0]
+# print(alphabet)
 
-print("f" in alphabet)
-print("f" not in alphabet)
-print("fab" in alphabet)
+#alphabet.append("ZZ")
+#print(alphabet)
+
+# alphabet.insert(0, "ZZ")
+# print(alphabet)
+
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+# #replace m with space character
+# print(alphabet)
+#
+# alphabet = "abc"
+# print(alphabet)
+#
+# alphabet = "abcdefghijkl"+" "+"nopqrstuvwxyz"
+# print(alphabet)
+# alphabet = "abcdefghijkalmnopaqrstuvwxayza"
+# #alphabet = alphabet[:12] +" "+alphabet[13:]
+# result = ""
+# for element in alphabet:
+#     if element == "m":
+#         result += " "
+#     else:
+#         result += element
+#
+# print(result)
+#
+# print(result.index("y"))
+# print(result.index("x"))
+# print(result.index("c"))
+#
+# print(list(result))
+# print(result.count("a"))
+#
+# s1 = 'Where are the snows of yesteryear?'
+# s2 = s1.split("r")
+# print(s2)
+
+
+# def mySplit(str):
+#     result = []
+#     tempResult = ""
+#     for index in range(len(str)):
+#         if str[index] == " ":
+#             result.append(tempResult)
+#             tempResult = ""
+#         elif index == len(str)-1:
+#             result.append(tempResult+str[len(str)-1])
+#             tempResult = ""
+#         else:
+#             tempResult += str[index]
+#     return result
+#
+# print(mySplit("To be or not to be , that is the question"))
+# print(mySplit("To be or not to be, that is the question"))
+# print(mySplit(" "))
+# print(mySplit("abc"))
+# print(mySplit(""))
+
+s1 = 'Where are the snows of yesteryear?'
+s2 = s1.split()
+print(s2)
+s3 = sorted(s2)
+print(s3[1])
+print(s3)
