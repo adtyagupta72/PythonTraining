@@ -802,14 +802,96 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # print(s3[1])
 # print(s3)
 
-s1 = '12.8'
-i = int(s1)
-s2 = str(i)
-f = float(s2)   # Error
-print(s1 == s2)
+# s1 = '12.8'
+# i = int(s1)
+# s2 = str(i)
+# f = float(s2)   # Error
+# print(s1 == s2)
 
        #          ---
        #         |   |
        #          ---
        #         |   |
        #          ---
+
+# print("#   ###   ###   # #   ###   ###   ###   ###   ###   ###")
+# print("#     #     #   # #   #     #       #   # #   # #   # #")
+# print("#   ###   ###   ###   ###   ###     #   ###   ###   # #")
+# print("#   #       #     #     #   # #     #   # #     #   # #")
+# print("#   ###   ###     #   ###   ###     #   ###   ###   ###")
+
+# def lednumber(number):
+#     ledpatterns = {
+#         ["   #",
+#          "   #",
+#          "   #",
+#          "   #",
+#          "   #"],
+#          ["###",
+#           "  #",
+#           "###",
+#           "#  ",
+#           "###"],
+#           ["###",
+#            "  #",
+#            "###",
+#            "  #",
+#            "###"],
+#           ["# # "
+#            "# #",
+#            "###",
+#            "  #",
+#            "  #"],
+#             ["###",
+#             "#  ",
+#             "###",
+#             "  #",
+#             "###"],
+#             [
+#             "###",
+#             "#  ",
+#             "###",
+#             "# #",
+#             "###"
+#         ],
+#         [
+#             "###",
+#             "  #",
+#             "  #",
+#             "  #",
+#             "  #"
+#         ],
+#         [
+#             "###",
+#             "# #",
+#             "###",
+#             "# #",
+#             "###"
+#         ],[
+#             "###",
+#             "# #",
+#             "###",
+#             "  #",
+#             "###"
+#         ]
+#     }
+#     for digit in number:
+#         pattern = ledpatterns[digit]
+#         for i in range():
+
+
+#word = "ADITYA GUPTA"
+word = "aditya gupta"
+print(word)
+print(word.capitalize())
+print(word.upper())
+print(word.upper().lower())
+print("@#$%^&".capitalize())
+print("123".capitalize())
+
+
+print("|"+"alpha".center(10)+"|")
+print("|"+"alpha".center(20)+"|")
+
+print("|"+"alpha".center(10, "@")+"|")
+print("|"+"alpha".center(20, "*")+"|")
