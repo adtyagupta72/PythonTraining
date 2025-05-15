@@ -795,9 +795,21 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # print(mySplit("abc"))
 # print(mySplit(""))
 
-s1 = 'Where are the snows of yesteryear?'
-s2 = s1.split()
-print(s2)
-s3 = sorted(s2)
-print(s3[1])
-print(s3)
+# s1 = 'Where are the snows of yesteryear?'
+# s2 = s1.split()
+# print(s2)
+# s3 = sorted(s2)
+# print(s3[1])
+# print(s3)
+
+s1 = '12.8'
+i = int(s1)
+s2 = str(i)
+f = float(s2)   # Error
+print(s1 == s2)
+
+       #          ---
+       #         |   |
+       #          ---
+       #         |   |
+       #          ---
