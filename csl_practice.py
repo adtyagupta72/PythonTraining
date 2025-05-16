@@ -881,17 +881,120 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 
 
 #word = "ADITYA GUPTA"
-word = "aditya gupta"
-print(word)
-print(word.capitalize())
-print(word.upper())
-print(word.upper().lower())
-print("@#$%^&".capitalize())
-print("123".capitalize())
+# word = "aditya gupta"
+# print(word)
+# print(word.capitalize())
+# print(word.upper())
+# print(word.upper().lower())
+# print("@#$%^&".capitalize())
+# print("123".capitalize())
+#
+#
+# print("|"+"alpha".center(10)+"|")
+# print("|"+"alpha".center(20)+"|")
+#
+# print("|"+"alpha".center(10, "@")+"|")
+# print("|"+"alpha".center(20, "*")+"|")
+
+# num_patterns = [
+#      """
+# ###
+# # #
+# # #
+# # #
+# ###""",
+#     """
+#   #
+#   #
+#   #
+#   #
+#   #""",
+#  """
+# ###
+#   #
+# ###
+# #
+# ###""",
+#      """
+# ###
+#   #
+# ###
+#   #
+# ###""",
+# """
+# # #
+# # #
+# ###
+#   #
+#   #""",
+#     """
+# ###
+# #
+# ###
+#   #
+# ###""",
+#    """
+# ###
+# #
+# ###
+# # #
+# ###""",
+# """
+# ###
+#   #
+#   #
+#   #
+#   #""",
+# """
+# ###
+# # #
+# ###
+# # #
+# ###""",
+#     """
+# ###
+# # #
+# ###
+#   #
+# ###"""
+#     ]
+#
+# number = input("Please enter a positive number :")
+#
+# for i in number:
+#     digit = int(i)
+#     print(num_patterns[digit])
+#     print()
+
+# the_text = """A variation of the ordinary lorem ipsum
+# text has been used in typesetting since the 1960s
+# or earlier, when it was popularized by advertisements
+# for Letraset transfer sheets. It was introduced to
+# the Information Age in the mid-1980s by the Aldus Corporation,
+# which employed it in graphics and word-processing templates
+# for its desktop publishing program PageMaker (from Wikipedia)"""
+#
+# fnd = the_text.find('the')                      #15
+# while fnd != -1:                                #15
+#     print(fnd)                                  #15
+#     fnd = the_text.find('the', fnd +1)    #
+
+print('kappa'.find('a', 1, 4))
+print('kappa'.find('a', 2, 4))
+
+print("Moooo".isalpha())
+print('Mu40'.isalpha())
+
+print("______".join(["omicron", "pi", "rho"]))
+
+str = "  abc  ".lstrip()
+print("|"+str+"|")
+print("www.cisco.com".lstrip("w."))
+
+print("www.netacad.com".replace("netacad.com", "pythoninstitute.org"))
+print("This is it!".replace("is", "are"))
+print("Apple juice".replace("juice", ""))
+
+print("Apple juice".replace("", "_"))
 
 
-print("|"+"alpha".center(10)+"|")
-print("|"+"alpha".center(20)+"|")
-
-print("|"+"alpha".center(10, "@")+"|")
-print("|"+"alpha".center(20, "*")+"|")
