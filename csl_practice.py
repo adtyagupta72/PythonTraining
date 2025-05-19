@@ -979,22 +979,57 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 #     print(fnd)                                  #15
 #     fnd = the_text.find('the', fnd +1)    #
 
-print('kappa'.find('a', 1, 4))
-print('kappa'.find('a', 2, 4))
+# print('kappa'.find('a', 1, 4))
+# print('kappa'.find('a', 2, 4))
+#
+# print("Moooo".isalpha())
+# print('Mu40'.isalpha())
+#
+# print("______".join(["omicron", "pi", "rho"]))
+#
+# str = "  abc  ".lstrip()
+# print("|"+str+"|")
+# print("www.cisco.com".lstrip("w."))
+#
+# print("www.netacad.com".replace("netacad.com", "pythoninstitute.org"))
+# print("This is it!".replace("is", "are"))
+# print("Apple juice".replace("juice", ""))
+#
+# print("Apple juice".replace("", "_"))
 
-print("Moooo".isalpha())
-print('Mu40'.isalpha())
+# print('10' == 10)
+# print('10' != 10)
+# print('10' == 1)
+# print('10' != 1)
+# # print('10' < 1)
+# # print('10' > 1)
+#
+# my_string_list = ['omega', 'alpha', 'pi', 'gamma']
+# #my_string_list = ['aaaaa', 'aaaa', 'abaa', 'aaaac', 'aaaad']
+# #                    1, 0, 2, 3
+#
+# #my_string_list_2 = sorted(my_string_list)
+# print(my_string_list)
+# my_string_list.sort()
+# print(my_string_list)
+# # print(my_string_list_2)
+#
+#
+# number = 10
+# float_val = 10.10
+# print(type(number))
+# string = str(number)
+# print(string)
+# print(type(string))
+#
+# print(type(float_val))
+# string = str(float_val)
+# print(string)
+# print(type(string))
 
-print("______".join(["omicron", "pi", "rho"]))
+import math
 
-str = "  abc  ".lstrip()
-print("|"+str+"|")
-print("www.cisco.com".lstrip("w."))
+x = float(input("Enter x: "))
+y = math.sqrt(x)
 
-print("www.netacad.com".replace("netacad.com", "pythoninstitute.org"))
-print("This is it!".replace("is", "are"))
-print("Apple juice".replace("juice", ""))
-
-print("Apple juice".replace("", "_"))
-
-
+print("The square root of", x, "equals to", y)
