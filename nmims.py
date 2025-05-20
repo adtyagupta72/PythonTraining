@@ -213,8 +213,15 @@ print(avg)
 #
 # message = 1
 # message()
-def hello(name): # defining a function
-    print("Hello,", name) # body of the function
+# def hello(name): # defining a function
+#     print("Hello,", name) # body of the function
+#
+# name = input("Enter your name: ")
+# hello(name) # calling the function
 
-name = input("Enter your name: ")
-hello(name) # calling the function
+def message():
+    print("Enter a value: ")
+print(message())    #
+message = 1
+# int
+print(message)
