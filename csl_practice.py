@@ -1027,9 +1027,101 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # print(string)
 # print(type(string))
 
-import math
+# import math
+#
+# x = float(input("Enter x: "))
+# y = math.sqrt(x)
+#
+# print("The square root of", x, "equals to", y)
 
-x = float(input("Enter x: "))
-y = math.sqrt(x)
+# def bad_fun(n):
+#     try:
+#         return 1 / n
+#     except ArithmeticError:
+#         print("Arithmetic Problem!")
+#     return None
+#
+# bad_fun(0)
+#
+# print("THE END.")
 
-print("The square root of", x, "equals to", y)
+
+# def bad_fun(n):
+#     if n == 0:
+#         print("Now I am going to raise an exception manually!")
+#         raise
+#     else:
+#         return 1 / n
+#
+# try:
+#     bad_fun(0)
+# except ArithmeticError:
+#     print("Arithmetic Problem!")
+# except Exception:
+#     print("Exception Problem!")
+#
+# print("THE END.")
+
+# import math
+#
+# x = float(input("Enter the value:"))
+# assert x >= 0.0     # checking for valida input
+#
+# x = math.sqrt(x)
+# print(x)
+
+# from math import tan, radians
+# angle = int(input('Enter integral angle in degrees: '))
+# # We must be sure that angle != 90 + k * 180
+# assert angle % 180 != 90
+# print(tan(radians(angle)))
+
+# the_list = [1, 2, 3, 4, 5]
+# ix = 0
+# do_it = True
+#
+# while do_it:
+#     try:
+#         print(the_list[ix])
+#         ix += 1
+#     except IndexError:
+#         do_it = False
+# print('Done')
+
+# from time import sleep
+# seconds = 0
+# while True:
+#     try:
+#         print(seconds)
+#         seconds += 1
+#         sleep(1)
+#     except KeyboardInterrupt:
+#         print("Don't do that!")
+
+# from match import exp
+# ex = 1
+# try:
+#     while True:
+#         print(exp(ex))
+#         ex *= 2
+# except OverflowError:
+#     print('The number is too big.')
+
+# dictionary = {'a': 'b', 'b': 'c', 'c': 'd'}
+# ch = 'a'
+#
+# try:
+#     while True:
+#         ch = dictionary[ch]
+#         print(ch)
+# except KeyError:
+#     print('No such key:', ch)
+
+try:
+    print("5"/0)
+except ArithmeticError:
+    print("arith")
+except ZeroDivisionError:
+    print("zero")
+except:
+    print("some")
