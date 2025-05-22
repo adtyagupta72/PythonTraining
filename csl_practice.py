@@ -1157,6 +1157,35 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 class Stack:
     def __init__(self):
         print("Constructor running!")
-        self.stack = []
+        self.__stack = []
+
+    def push(self, val):
+        self.__stack.append(val)
+        print(self.__stack)
+
+    def pop(self):
+        val = self.__stack[-1]
+        del self.__stack[-1]
+        return val
+
+    def travers(self):
+        print(self.__stack)
 
 stack_object = Stack()
+print(stack_object)
+stack_object.push(1)
+stack_object.push(2)
+stack_object.push(3)
+stack_object.push(4)
+stack_object.push(5)
+stack_object.push(6)
+stack_object.pop()
+stack_object.travers()
+stack_object.pop()
+stack_object.travers()
+stack_object.pop()
+stack_object.travers()
+# print(stack_object._Stack__stack)
+# print(stack_object.stack)
+# print(len(stack_object.stack))
+# print(type(stack_object.stack))
