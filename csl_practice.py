@@ -1117,11 +1117,46 @@ sum     0   10  30  60  100     150     210     280     360     450     550
 # except KeyError:
 #     print('No such key:', ch)
 
-try:
-    print("5"/0)
-except ArithmeticError:
-    print("arith")
-except ZeroDivisionError:
-    print("zero")
-except:
-    print("some")
+# try:
+#     print("5"/0)
+# except ArithmeticError:
+#     print("arith")
+# except ZeroDivisionError:
+#     print("zero")
+# except:
+#     print("some")
+# class MyClass:
+#     pass
+#
+# myVar = 10  # Number, String, Boolean, Float, Char, Tupple, Dictionary, List, Object
+#
+# my_class_object = MyClass()
+# print(my_class_object)
+# print(type(my_class_object))
+
+# stack = []
+# def push(val):
+#     stack.append(val)
+#     print(stack)
+#
+# def pop():
+#     val = stack[-1]
+#     del stack[-1]
+#     return val
+#
+# push(3)
+# push(2)
+# push(1)
+# print(pop())
+# print(stack)
+# print(pop())
+# print(stack)
+# print(pop())
+# print(stack)
+
+class Stack:
+    def __init__(self):
+        print("Constructor running!")
+        self.stack = []
+
+stack_object = Stack()
