@@ -290,14 +290,44 @@ print(avg)
 # scope_check()
 # print(var)
 
-def my_function(my_list_1):
-    print("Print #1:", my_list_1)
-    print("Print #2:", my_list_2)
-    my_list_1 = [0, 1]
-    print("Print #3:", my_list_1)
-    print("Print #4:", my_list_2)
+# def my_function(my_list_1):
+#     print("Print #1:", my_list_1)
+#     print("Print #2:", my_list_2)
+#     my_list_1 = [0, 1]
+#     print("Print #3:", my_list_1)
+#     print("Print #4:", my_list_2)
+#
+#
+# my_list_2 = [2, 3]
+# my_function(my_list_2)
+# print("Print #5:", my_list_2)
 
+tuple1 = (1, 2, 3, 4, 5)
+tuple2 = 1, 2, 3, 4, 5,
 
-my_list_2 = [2, 3]
-my_function(my_list_2)
-print("Print #5:", my_list_2)
+print(tuple1)
+print(type(tuple1))
+print(tuple2)
+print(type(tuple2))
+
+tuple3 = ()
+print(tuple3)
+print(type(tuple3))
+
+tuple4 = 1,
+print(tuple4)
+print(type(tuple4))
+
+tuple5 = (1, 10, 100)
+
+tuple6 = tuple5+(1000, 10000)
+print(tuple6)
+print(type(tuple6))
+
+tuple7 = tuple6 * 3
+print(tuple7)
+print(type(tuple7))
+print(len(tuple7))
+print(10 in tuple7)
+print(20 not in tuple7)
+print(20 in tuple7)
