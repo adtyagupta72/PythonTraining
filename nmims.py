@@ -192,14 +192,14 @@ for i in range(8):
 #     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
 # ]
 
-temps = [[hour for hour in range(24)] for month in range(31)]
-print(temps)
+# temps = [[hour for hour in range(24)] for month in range(31)]
+# print(temps)
 # Calculating Average noon temperature
-sum=0
-for day in range(31):
-    sum=sum+temps[day][11]
-avg=sum/31
-print(avg)
+# sum=0
+# for day in range(31):
+#     sum=sum+temps[day][11]
+# avg=sum/31
+# print(avg)
 
 # Calculating highest temperature in the month
 # highest=-200
@@ -302,32 +302,82 @@ print(avg)
 # my_function(my_list_2)
 # print("Print #5:", my_list_2)
 
-tuple1 = (1, 2, 3, 4, 5)
-tuple2 = 1, 2, 3, 4, 5,
+# tuple1 = (1, 2, 3, 4, 5)
+# tuple2 = 1, 2, 3, 4, 5,
+#
+# print(tuple1)
+# print(type(tuple1))
+# print(tuple2)
+# print(type(tuple2))
+#
+# tuple3 = ()
+# print(tuple3)
+# print(type(tuple3))
+#
+# tuple4 = 1,
+# print(tuple4)
+# print(type(tuple4))
+#
+# tuple5 = (1, 10, 100)
+#
+# tuple6 = tuple5+(1000, 10000)
+# print(tuple6)
+# print(type(tuple6))
+#
+# tuple7 = tuple6 * 3
+# print(tuple7)
+# print(type(tuple7))
+# print(len(tuple7))
+# print(10 in tuple7)
+# print(20 not in tuple7)
+# print(20 in tuple7)
 
-print(tuple1)
-print(type(tuple1))
-print(tuple2)
-print(type(tuple2))
+var = 123
 
-tuple3 = ()
-print(tuple3)
-print(type(tuple3))
+tuple = (1, 2, 3, var)
 
-tuple4 = 1,
-print(tuple4)
-print(type(tuple4))
+print(tuple)
 
-tuple5 = (1, 10, 100)
+t1 = (1,)
+t2 = (2,)
+t3 = (3, var)
 
-tuple6 = tuple5+(1000, 10000)
-print(tuple6)
-print(type(tuple6))
+print(t1, t2, t3)
 
-tuple7 = tuple6 * 3
-print(tuple7)
-print(type(tuple7))
-print(len(tuple7))
-print(10 in tuple7)
-print(20 not in tuple7)
-print(20 in tuple7)
+t1, t2, t3 = t2, t3, t1
+
+print(t1, t2, t3)
+
+dictionary = {
+    "cat": "chat",
+    "dog": "chien",
+    "horse": "cheval"
+}
+phone_numbers = {'boss': 5551234567, 'Suzy': 22657854310}
+empty_dictionary = {}
+
+print(dictionary)
+print(len(dictionary))
+print(phone_numbers)
+print(len(phone_numbers))
+print(empty_dictionary)
+print(len(empty_dictionary))
+
+print(dictionary['cat'])
+print(phone_numbers['Suzy'])
+#print(phone_numbers['Suzy1'])
+
+for key in dictionary:
+    if key in dictionary:
+        print(key, "->", dictionary[key])
+    else:
+        print(key, "is not in dictionary")
+
+print(dictionary.keys())
+print(dictionary.keys())
+for key in dictionary.keys():
+    if key in dictionary:
+        print(key, "->", dictionary[key])
+    else:
+        print(key, "is not in dictionary")
+
