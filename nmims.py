@@ -464,11 +464,16 @@ dictionary = {
 # student_data = collect_grades()
 # averages = calculate_averages(student_data)
 # display_results(averages)
-try:
-    value = int(input('Enter a natural number: '))
-    print('The reciprocal of', value, 'is', 1 / value)
-except:
-    print("Error occured, please check the input")
+# try:
+#     value = int(input('Enter a natural number: '))
+# except:
+#     print("Valid input required")
+#
+#
+# try:
+#     print('The reciprocal of', value, 'is', 1 / value)
+# except:
+#     print("Value cannot be zero!")
 
 # inputString = input('Enter a natural number: ')
 #
@@ -478,3 +483,12 @@ except:
 #
 # else:
 #     print("you can't add String here....")
+
+
+try:
+    value = int(input('Enter a natural number: '))
+    print('The reciprocal of', value, 'is', 1 / value)
+except ValueError:
+    print("Value Invalid!")
+except ZeroDivisionError:
+    print("Value cannot be zero!")
