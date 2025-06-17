@@ -332,52 +332,149 @@ for i in range(8):
 # print(20 not in tuple7)
 # print(20 in tuple7)
 
-var = 123
-
-tuple = (1, 2, 3, var)
-
-print(tuple)
-
-t1 = (1,)
-t2 = (2,)
-t3 = (3, var)
-
-print(t1, t2, t3)
-
-t1, t2, t3 = t2, t3, t1
-
-print(t1, t2, t3)
+# var = 123
+#
+# tuple = (1, 2, 3, var)
+#
+# print(tuple)
+#
+# t1 = (1,)
+# t2 = (2,)
+# t3 = (3, var)
+#
+# print(t1, t2, t3)
+#
+# t1, t2, t3 = t2, t3, t1
+#
+# print(t1, t2, t3)
 
 dictionary = {
     "cat": "chat",
     "dog": "chien",
     "horse": "cheval"
 }
-phone_numbers = {'boss': 5551234567, 'Suzy': 22657854310}
-empty_dictionary = {}
-
-print(dictionary)
-print(len(dictionary))
-print(phone_numbers)
-print(len(phone_numbers))
-print(empty_dictionary)
-print(len(empty_dictionary))
-
-print(dictionary['cat'])
-print(phone_numbers['Suzy'])
+# phone_numbers = {'boss': 5551234567, 'Suzy': 22657854310}
+# empty_dictionary = {}
+#
+# print(dictionary)
+# print(len(dictionary))
+# print(phone_numbers)
+# print(len(phone_numbers))
+# print(empty_dictionary)
+# print(len(empty_dictionary))
+#
+# print(dictionary['cat'])
+# print(phone_numbers['Suzy'])
 #print(phone_numbers['Suzy1'])
 
-for key in dictionary:
-    if key in dictionary:
-        print(key, "->", dictionary[key])
-    else:
-        print(key, "is not in dictionary")
+# for key in dictionary:
+#     if key in dictionary:
+#         print(key, "->", dictionary[key])
+#     else:
+#         print(key, "is not in dictionary")
+#
+# print(dictionary.keys())
+# print(dictionary.keys())
+# for key in dictionary.keys():
+#     if key in dictionary:
+#         print(key, "->", dictionary[key])
+#     else:
+#         print(key, "is not in dictionary")
 
-print(dictionary.keys())
-print(dictionary.keys())
-for key in dictionary.keys():
-    if key in dictionary:
-        print(key, "->", dictionary[key])
-    else:
-        print(key, "is not in dictionary")
+# for animal, name in dictionary.items():
+#     print("Animal:", animal, ", Name:", name)
+#
+# for name in dictionary.values():
+#     print("Name:", name)
+#
+# newDictionary = dictionary # only reference was copied
+#
+# print("new Dictionary:", newDictionary)
+# print("Dictionary:", dictionary)
+#
+# dictionary["cat"] = "abc"
+#
+# print("new Dictionary:", newDictionary)
+# print("Dictionary:", dictionary)
+#
+# newDictionary = dictionary.copy()
+#
+# dictionary["dog"] = "def"
+#
+# print("new Dictionary:", newDictionary)
+# print("Dictionary:", dictionary)
+#
+# # del dictionary["cat"]
+# # print("Dictionary:", dictionary)
+#
+# newDictionary.update({"Parrot":"Jungle"})
+# print("new Dictionary:", newDictionary)
+# newDictionary.popitem()
+# print("new Dictionary:", newDictionary)
+#
+# if "cat" in dictionary:
+#     print("Cat is present")
+#     print(dictionary["cat"])
+# else:
+#     print("Cat is not present!!")
+#
+# print(len(dictionary))
+#
+# dictionary.clear()
+# print("Dictionary after clear", dictionary)
+# del dictionary
+# #print("Dictionary after del", dictionary)
+#
+# def collect_grades():
+#     students = {}
+#
+#     while True:
+#         name = input("Enter student name (blank to stop): ")
+#         if name == "":
+#             break
+#
+#         scores = ()
+#         print("Enter scores:")
+#         while True:
+#             score_input = input("  Score (blank to finish): ")
+#             if score_input == "":
+#                 break
+#
+#             scores.append(float(score_input))
+#
+#             students[name] = scores
+#
+#     return students
+#
+# def calculate_averages(students):
+#     averages = {}
+#     for name in students:
+#         total = sum(students[name])
+#         count = len(students[name])
+#         averages[name] = total / count
+#     return averages
+#
+# def display_results(averages):
+#     print("Average Scores:")
+#     for name in (averages.keys()):
+#         print({name},":", {averages[name]})
+#
+#
+#
+# student_data = collect_grades()
+# averages = calculate_averages(student_data)
+# display_results(averages)
+try:
+    value = int(input('Enter a natural number: '))
+    print('The reciprocal of', value, 'is', 1 / value)
+except:
+    print("Error occured, please check the input")
 
+# inputString = input('Enter a natural number: ')
+#
+# if inputString.isdigit():
+#     value = int(inputString)
+#     print('The reciprocal of', value, 'is', 1 / value)
+#
+# else:
+#     print("you can't add String here....")
