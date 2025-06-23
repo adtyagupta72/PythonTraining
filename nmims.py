@@ -485,10 +485,49 @@ dictionary = {
 #     print("you can't add String here....")
 
 
-try:
-    value = int(input('Enter a natural number: '))
-    print('The reciprocal of', value, 'is', 1 / value)
-except ValueError:
-    print("Value Invalid!")
-except ZeroDivisionError:
-    print("Value cannot be zero!")
+# try:
+#     value = int(input('Enter a natural number: '))
+#     print('The reciprocal of', value, 'is', 1 / value)
+# #     1 - Input = 0
+# #     2 - Input = character
+# #     3 - Input = String
+# except ValueError:
+#     print("Value Invalid!")
+# except ZeroDivisionError:
+#     print("Value cannot be zero!")
+
+# temperature = float(input('Enter current temperature:'))
+# if temperature > 0:
+#     print("Above zero")
+# elif temperature < 0:
+#     print("Below zero")
+# else:
+#     print("Zero")
+#
+# my_list = [x * x for x in range(5)]
+#
+#
+# def fun(lst):
+#     del lst[lst[2]]
+#     return lst
+#
+#
+# print(fun(my_list))
+
+x = 1
+y = 2
+x, y, z = x, x, y
+z, y, z = x, y, z
+
+print(x, y, z)
+
+lst = [i for i in range(-1, -2)]
+                    #start  end
+print(lst)
+
+tup = (1, 2, 4, 8)
+print(tup)
+tup = tup[-2:-1]
+print(tup)
+tup = tup[-1]
+print(tup)
