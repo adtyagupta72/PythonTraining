@@ -514,20 +514,37 @@ dictionary = {
 #
 # print(fun(my_list))
 
-x = 1
-y = 2
-x, y, z = x, x, y
-z, y, z = x, y, z
+# x = 1
+# y = 2
+# x, y, z = x, x, y
+# z, y, z = x, y, z
+#
+# print(x, y, z)
+#
+# lst = [i for i in range(-1, -2)]
+#                     #start  end
+# print(lst)
+#
+# tup = (1, 2, 4, 8)
+# print(tup)
+# tup = tup[-2:-1]
+# print(tup)
+# tup = tup[-1]
+# print(tup)
 
-print(x, y, z)
+#print(None + 1)
+# a = 1
+# print(None == a)
+# print(None != a)
+def fun(x):
+    global y
+    y = x * x
+    return y
 
-lst = [i for i in range(-1, -2)]
-                    #start  end
-print(lst)
+fun(2)
+print(y)
 
-tup = (1, 2, 4, 8)
-print(tup)
-tup = tup[-2:-1]
-print(tup)
-tup = tup[-1]
-print(tup)
+import math
+print("math.sin: ",math.sin)
+print("math.pi: ",math.pi)
+print(math.sin(math.pi/2))
