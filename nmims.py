@@ -588,9 +588,16 @@ dictionary = {
 #
 # print(sin(pi / 2))
 
-import math as m
-print("m.sin: ",m.sin)
-print("m.pi: ",m.pi)
-print(m.sin(m.pi/2))
+# import math as m
+# print("m.sin: ",m.sin)
+# print("m.pi: ",m.pi)
+# print(m.sin(m.pi/2))
 
+# from math import pi as PI, sin as sine
+import math
+#print(sine(PI/2))
+print(dir(math))
+print("tan" in dir(math))
+if "tan" in dir(math):
+    print("Tan can be used from Math")
 
