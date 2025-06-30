@@ -536,15 +536,61 @@ dictionary = {
 # a = 1
 # print(None == a)
 # print(None != a)
-def fun(x):
-    global y
-    y = x * x
-    return y
+# def fun(x):
+#     global y
+#     y = x * x
+#     return y
+#
+# fun(2)
+# print(y)
+#
+# import math
+# print("math.sin: ",math.sin)
+# print("math.pi: ",math.pi)
+# print(math.sin(math.pi/2))
 
-fun(2)
-print(y)
+# import math
+#
+# def sin(x):
+#     if 2 * x == pi:
+#         return 0.99999999
+#     else:
+#         return None
+# pi = 3.14
+#
+# print(sin(pi/2))
+# print(math.sin(math.pi/2))
 
-import math
-print("math.sin: ",math.sin)
-print("math.pi: ",math.pi)
-print(math.sin(math.pi/2))
+# from math import sin, pi
+# print(sin(pi/2))
+
+# from math import sin, pi
+# print(sin(pi / 2))
+# pi = 3.14
+# def sin(x):
+#     if 2 * x == pi:
+#         return 0.99999999
+#     else:
+#         return None
+#
+# print(sin(pi / 2))
+
+# pi = 3.14
+# def sin(x):
+#     if 2 * x == pi:
+#         return 0.99999999
+#     else:
+#         return None
+#
+# print(sin(pi / 2))
+#
+# from math import *
+#
+# print(sin(pi / 2))
+
+import math as m
+print("m.sin: ",m.sin)
+print("m.pi: ",m.pi)
+print(m.sin(m.pi/2))
+
+
