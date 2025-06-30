@@ -594,10 +594,32 @@ dictionary = {
 # print(m.sin(m.pi/2))
 
 # from math import pi as PI, sin as sine
-import math
-#print(sine(PI/2))
-print(dir(math))
-print("tan" in dir(math))
-if "tan" in dir(math):
-    print("Tan can be used from Math")
+# import math
+# #print(sine(PI/2))
+# print(dir(math))
+# print("tan" in dir(math))
+# if "tan" in dir(math):
+#     print("Tan can be used from Math")
+
+# from math import pi, radians, degrees, sin, cos, tan, asin
+#
+# ad = 90
+# ar = radians(ad)
+# ad = degrees(ar)
+#
+# print(ad == 90.)
+# print(ar == pi / 2.)
+# print(sin(ar) / cos(ar) == tan(ar))
+# print(asin(sin(ar)) == ar)
+
+
+from math import ceil, floor, trunc
+x = 1.4
+y = 2.9
+print(floor(x), floor(y))
+print(floor(-x), floor(-y))
+print(ceil(x), ceil(y))
+print(ceil(-x), ceil(-y))
+print(trunc(x), trunc(y))
+print(trunc(-x), trunc(-y))
 
