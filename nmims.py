@@ -88,7 +88,7 @@ Process
 # print("New list contents: ", numbers)  # Current list contents.
 
 
-list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+#list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 # print("My List: ", list)
 # print("5th element: ", list[4])
 # del list[0]
@@ -107,10 +107,10 @@ list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 # del list
 # print("My List: ", list)
 
-print(list)
-for count in range(len(list)):
-    #print("count:", count) # 0 1 2 3 4 5 6 7 8 9
-    print("list[-",count+1,"]:", list[-1*(count+1)])
+# print(list)
+# for count in range(len(list)):
+#     #print("count:", count) # 0 1 2 3 4 5 6 7 8 9
+#     print("list[-",count+1,"]:", list[-1*(count+1)])
 
 #print("list[-11]", list[-11])
 
@@ -156,30 +156,30 @@ check4    (2,4)                             => [2, 4, 6, 8, 10]
 # print(new_list)     #8, 6
 
 
-list=[]
-
+# list=[]
+#
+# # for i in range(8):
+# #     list.append("WHITE_PAWN")
+#
+# list = ["WHITE_PAWN" for i in range(8)]
+# # ["WHITE_PAWN","WHITE_PAWN","WHITE_PAWN","WHITE_PAWN","WHITE_PAWN",...."WHITE_PAWN"]
+# print(list)
+#
+# squares = [x ** 2 for x in range(10)]
+# print(squares)
+#
+# twos = [2 ** i for i in range(8)]
+# print(twos)
+#
+# odds = [x for x in squares if x % 2 != 0 ]
+#
+# print(odds)         #
+#
+# board = []
 # for i in range(8):
-#     list.append("WHITE_PAWN")
-
-list = ["WHITE_PAWN" for i in range(8)]
-# ["WHITE_PAWN","WHITE_PAWN","WHITE_PAWN","WHITE_PAWN","WHITE_PAWN",...."WHITE_PAWN"]
-print(list)
-
-squares = [x ** 2 for x in range(10)]
-print(squares)
-
-twos = [2 ** i for i in range(8)]
-print(twos)
-
-odds = [x for x in squares if x % 2 != 0 ]
-
-print(odds)         #
-
-board = []
-for i in range(8):
-    row = ["EMPTY" for j in range(8)]
-    board.append(row)
-    print(board[i])
+#     row = ["EMPTY" for j in range(8)]
+#     board.append(row)
+#     print(board[i])
 
 # [
 #     ["EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY", "EMPTY"],
@@ -613,13 +613,47 @@ dictionary = {
 # print(asin(sin(ar)) == ar)
 
 
-from math import ceil, floor, trunc
-x = 1.4
-y = 2.9
-print(floor(x), floor(y))
-print(floor(-x), floor(-y))
-print(ceil(x), ceil(y))
-print(ceil(-x), ceil(-y))
-print(trunc(x), trunc(y))
-print(trunc(-x), trunc(-y))
+# from math import ceil, floor, trunc
+# x = 1.4
+# y = 2.9
+# print(floor(x), floor(y))
+# print(floor(-x), floor(-y))
+# print(ceil(x), ceil(y))
+# print(ceil(-x), ceil(-y))
+# print(trunc(x), trunc(y))
+# print(trunc(-x), trunc(-y))
+# from random import random
+#
+# for i in range(5):
+#     print(random())
 
+# import random
+# # seed()
+# #
+# # for i in range(5):
+# #     print(random())
+# print(random.randrange(10), end=' ')
+# print(random.randrange(0, 10), end=' ')
+# print(random.randrange(0, 10, 1), end=' ')
+# print(random.randint(0, 10))
+#
+# for i in range(10):
+#     print(random.randint(1, 10), end=',')
+
+from platform import platform, machine, processor, system, version
+
+print(platform())
+print(platform(1))
+print(platform(0, 1))
+print(platform(1, 1))
+
+print(machine())
+print(processor())
+print(system())
+print(version())
+
+from platform import python_implementation, python_version_tuple
+print(python_implementation())
+pythonVersion = 0
+for atr in python_version_tuple():
+    print(atr)
